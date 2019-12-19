@@ -6,8 +6,11 @@
 *
 * */
 
-function merge(url,obj) {
-
+function merge(url,obj,params) {
+    var temp =  params[0].toString()
+    var str = "name"
+    var zh = JSON.parse(temp)
+    var ss= zh.attributes[str]
     var js = JSON.parse(obj)
     var arry = obj.tagName
     var str = "";
